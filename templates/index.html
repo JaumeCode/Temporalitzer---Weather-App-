@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temporalitzer</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="../static/assets/favicon/Black Climate Company Logo-Photoroom (2).png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+<body>
+
+    <div id="load">
+        <div id="caja_load">
+            <div id="icono_carga">
+                <img id="icono_carga" src="../static/assets/logo_temporalitzer/Black Climate Company Logo-Photoroom.png" alt="">
+            </div>
+            <img src="../static/assets/pantalla_carga/progres bar.gif" alt="">
+            <h3>Loading...</h3>
+        </div>
+    </div>
+
+    <div id="main" style="display: none;">
+        <div id="header">
+            <div id="tiempo">
+                <img src="../static/assets/logo_temporalitzer/Black Climate Company Logo-Photoroom.png" alt="">
+                <div id="icono">
+                    <i class="fa-solid fa-circle-info"></i>
+                </div>
+            </div>
+            
+            <input id="ubicacion" type="text" placeholder="Introduce Lugar">
+        </div>
+        <div id="content_1">
+            <h2>Principal</h2>
+            <div id="interior_1">
+                <div class="datos_1">
+                    <img id="iconos_change" src="../static/assets/logos_temperaturas/Nublado.png" alt="">
+                    <h3 id="temp">n/a</h3>
+                </div>
+                <div class="datos_1">
+                    <img src="../static/assets/logo_viento/viento.png" alt="">  
+                    <h3 id="viento">n/a</h3>
+                </div>
+            </div>
+        </div>
+        <div id="content_2">
+            <h2>Precipitaciones</h2>
+            <div id="interior_2">
+                <div class="datos_2">
+                    <img src="../static/assets/logos_lluvias/lluvia lijera.png" alt="">
+                    <h3 id="info_lluvias">n/a</h3> 
+                </div>  
+                <div class="datos_2">
+                    <img src="../static/assets/logo_humedad/humedad.png" alt="">
+                    <h3 id="humedad">n/a</h3>
+                </div>
+                <div class="datos_2">
+                    <img src="../static/assets/logo_presion/png-transparent-atmospheric-pressure-computer-icons-atmosphere-barometer-barometer-blue-angle-text (1)-Photoroom.png" alt="">
+                    <h3 id="presion">n/a</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="../static/script.js"></script>
+</body>
+</html>
