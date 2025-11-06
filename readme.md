@@ -1,5 +1,5 @@
 # 🌤️ Temporalitzer
-(static/assets/extra/Logo_Portada.png)
+![Banner logo](static/assets/extra/Logo_Portada.png)
 
 **Temporalitzer** es una aplicación web desarrollada con **Python (Flask)** y **JavaScript** que muestra en tiempo real el **clima actual, la hora local y la información geográfica** de cualquier ciudad del mundo.  
 Su objetivo es ofrecer una experiencia limpia, rápida y visualmente dinámica, combinando datos meteorológicos y temporales en una sola interfaz.
