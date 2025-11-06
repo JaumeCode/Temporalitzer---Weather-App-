@@ -17,7 +17,7 @@ let ubi_automatica=async()=>{
 
     try{
 
-        let automatico=await axios.get("http://127.0.0.1:5000/location")
+        let automatico=await axios.get("/location")
         return automatico.data.city
         
     }catch(error){
@@ -48,7 +48,7 @@ let getdatos=async()=>{
         let ciudad=ultima_ciudad
          
         //Recogemos datos del servidor
-        const enviar=await axios.post("http://127.0.0.1:5000/info",{
+        const enviar=await axios.post("/info",{
             city:ciudad
         })
         let resultados=enviar
