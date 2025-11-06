@@ -38,7 +38,7 @@ let getdatos=async()=>{
 
         if (ultima_ciudad === "" || contador === 0) {
             ultima_ciudad = await ubi_automatica()
-            console.log(ultima_ciudad)  
+            //console.log(ultima_ciudad)  
             contador++
     
         }
@@ -53,7 +53,7 @@ let getdatos=async()=>{
         })
         let resultados=enviar
 
-        console.log(resultados.data.name)
+        //console.log(resultados.data.name)
         let temperatura=resultados.data.main.temp
         let viento_data=resultados.data.wind.speed
         let lluvias=resultados.data.weather[0].description
@@ -85,8 +85,6 @@ let getdatos=async()=>{
 //Funcion de datos con ip automatica con intervalo
 
 
-
-
 contador_pantalla=0
 let pantalla_carga=document.getElementById("load")
 let main=document.getElementById("main")
@@ -96,7 +94,7 @@ let cambiar_pantalla = async () => {
     setTimeout(() => {
         pantalla_carga.style.display = "none";
         main.style.display = "flex";
-    }, 4000);
+    }, 3500);
     
 };
 
@@ -113,8 +111,8 @@ if(contador_pantalla===0){
 ubicacion.addEventListener("keyup",()=>{
     
     ultima_ciudad = ubicacion.value; 
-    contador++
-    setInterval(getdatos,100000)
+    contador+=1
+    setInterval(getdatos,10000)
     getdatos()
     
 })
@@ -125,32 +123,32 @@ ubicacion.addEventListener("keyup",()=>{
 
 let actualizar=(temperatura,generico)=>{
 
-    console.log(temperatura)
-    console.log(generico)
+    //console.log(temperatura)
+    //console.log(generico)
 
     //Iconos
     if(temperatura>=10 && temperatura<=25){
 
-        console.log("normal")
+        //console.log("normal")
         iconos_change.src="../static/assets/logos_temperaturas/Nublado.png"
         iconos_change.style.width="80px"
 
     }else if(temperatura <=10){
 
-        console.log("frio")
+        //console.log("frio")
         iconos_change.src="../static/assets/logos_temperaturas/logo_frio.png"
         iconos_change.style.width="130px"
 
     }else if(temperatura<0){
 
-        console.log("congelado")
+        //console.log("congelado")
         iconos_change.src="../static/assets/logos_temperaturas/logo_frio.png"
         iconos_change.style.width="130px"
         
 
 
     }else if(temperatura>=25){
-        console.log("calor")
+        //console.log("calor")
         iconos_change.src="../static/assets/logos_temperaturas/logo_calor.png"
         iconos_change.style.width="80px"
 
